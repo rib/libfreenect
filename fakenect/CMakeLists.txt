@@ -3,8 +3,8 @@
 ######################################################################################
 SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib/fakenect)
-include_directories(parson)
-add_library (fakenect SHARED fakenect.c parson/parson.c)
+include_directories(../src parson)
+add_library (fakenect SHARED fakenect.c parson/parson.c ../src/registration.c)
 set_target_properties ( fakenect PROPERTIES
   VERSION ${PROJECT_VER}
   SOVERSION ${PROJECT_APIVER}
