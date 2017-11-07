@@ -1,0 +1,3 @@
+[submodule "fakenect/parson"]
+	path = fakenect/parson
+	url = https://github.com/kgabis/parson
